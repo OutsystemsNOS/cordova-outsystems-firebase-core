@@ -20,6 +20,7 @@ module.exports = function(context) {
   }
   
   var platform = context.opts.plugin.platform;
+  console.log("Teste123");
   var platformConfig = utils.getPlatformConfigs(platform);
   if (!platformConfig) {
     utils.handleError("Invalid platform", defer);
